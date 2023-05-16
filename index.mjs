@@ -1,7 +1,7 @@
 import express from 'express'
 import 'express-async-errors'
 import { headless } from './headless.mjs'
-
+const port = process.env.PORT || 3000;
 const app = express()
 app.use(express.urlencoded({ extended: false }))
 
@@ -31,4 +31,4 @@ app.use((err, req, res, next) => {
     res.json({ message: err.message })
 })
 
-app.listen(3000,"0.0.0.0", () => console.log('Listening on https:/localhost:3000'))
+app.listen(port,"0.0.0.0", () => console.log('Listening on https:/localhost:3000'))
