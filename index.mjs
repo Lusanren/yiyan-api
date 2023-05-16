@@ -31,4 +31,4 @@ app.use((err, req, res, next) => {
     res.json({ message: err.message })
 })
 
-app.listen(3000, () => console.log('Listening on https:/localhost:3000'))
+app.listen(3000,"0.0.0.0", () => console.log('Listening on https:/localhost:3000'))
