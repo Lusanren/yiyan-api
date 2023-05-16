@@ -31,4 +31,4 @@ app.use((err, req, res, next) => {
     res.json({ message: err.message })
 })
 
-app.listen(443, () => console.log('Listening on https://yiyan-api-production.up.railway.app'))
+app.listen(3000, () => console.log('Listening on https:/localhost:3000'))
